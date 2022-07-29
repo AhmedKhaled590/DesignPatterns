@@ -2,6 +2,9 @@
 
 ## Note: A lot of these notes and codes is based on the [Design Patterns](https://refactoring.guru/design-patterns).
 
+<details>
+<summary> strategy Pattern </summary>
+
 ## Strategy Pattern:
 
 ### Defination
@@ -27,3 +30,32 @@
 ### Pros and Cons
 
 ![strategy_pattern_pros_and_cons](screenshots/strategyPatternPros&Cons.jpg)
+
+</details>
+
+<details>
+<summary> Observer Pattern </summary>
+
+## Observer Pattern:
+
+### Defination
+
+- Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.
+
+### Problem
+
+- It's a Poll problem. Imagine that you have subscripers objects that every now and then ask the publisher class if it has any change and act accordingly.This is a very common problem in the real world.
+
+### Solution
+
+- The Observer pattern suggests that you add a subscription mechanism to the publisher class so individual objects can subscribe to or unsubscribe from a stream of events coming from.Now, whenever an important event happens to the publisher, it goes over its subscribers and calls the specific notification method on their objects.
+
+### UML Diagram
+
+![uml_observer_pattern](https://refactoring.guru/images/patterns/diagrams/observer/structure-2x.png)
+
+### Pros and Cons
+
+![observer_pattern_pros_and_cons](screenshots/observerPatternPros&Cons.jpeg)
+
+</details>
