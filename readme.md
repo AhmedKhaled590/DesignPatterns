@@ -59,3 +59,30 @@
 ![observer_pattern_pros_and_cons](screenshots/observerPatternPros&Cons.jpeg)
 
 </details>
+
+<details>
+<summary> Decorator Pattern </summary>
+
+## Decorator Pattern:
+
+### Defination
+
+- Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+
+### Problem
+
+- The problem is that you need to add new behavior to an existing class without modifying the class itself.But Inheritance is not the best option,as at some point it will lead to class explosion due to need for many classes combined.
+
+### Solution
+
+- One of the ways to overcome these caveats is by using Aggregation or Composition.With this new approach you can easily substitute the linked “helper” object with another, changing the behavior of the container at runtime. An object can use the behavior of various classes, having references to multiple objects and delegating them all kinds of work.
+
+### UML Diagram
+
+![uml_decorator_pattern](https://refactoring.guru/images/patterns/diagrams/decorator/structure-2x.png)
+
+### Pros and Cons
+
+![observer_pattern_pros_and_cons](screenshots/decoratorPatternPros&Cons.jpeg)
+
+</details>
