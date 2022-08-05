@@ -86,3 +86,30 @@
 ![observer_pattern_pros_and_cons](screenshots/decoratorPatternPros&Cons.jpeg)
 
 </details>
+
+<details>
+<summary> Factory Method Pattern </summary>
+
+## Factory Method Pattern:
+
+### Defination
+
+- Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
+
+### Problem
+
+- The problem is that most of your code is coupled to the Specific class. Adding another requirement into the app would require making changes to the entire codebase. Moreover, if later you decide to add another type of feature to the app, you will probably need to make all of these changes again.As a result, you will end up with pretty nasty code, riddled with conditionals that switch the app’s behavior depending on the class of objects.
+
+### Solution
+
+- The Factory Method pattern suggests that you replace direct object construction calls (using the new operator) with calls to a special factory method. Don’t worry: the objects are still created via the new operator, but it’s being called from within the factory method. Objects returned by a factory method are often referred to as products.
+
+### UML Diagram
+
+![uml_factory_method_pattern](https://refactoring.guru/images/patterns/diagrams/factory-method/structure-2x.png)
+
+### Pros and Cons
+
+![factory_method_pattern_pros_and_cons](screenshots/factoryMethodPatternPros&Cons.jpg)
+
+</details>
