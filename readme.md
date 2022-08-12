@@ -113,3 +113,32 @@
 ![factory_method_pattern_pros_and_cons](screenshots/factoryMethodPatternPros&Cons.jpg)
 
 </details>
+
+<details>
+<summary> Singleton Pattern </summary>
+
+## Singleton Pattern:
+
+### Defination
+
+- Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
+
+### Problem
+
+- Ensure that a class has just a single instance. Why would anyone want to control how many instances a class has? The most common reason for this is to control access to some shared resource—for example, a database or a file.
+- Provide a global access point to that instance.
+
+### Solution
+
+- Make the default constructor private, to prevent other objects from using the new operator with the Singleton class.
+  Create a static creation method that acts as a constructor. Under the hood, this method calls the private constructor to create an object and saves it in a static field. All following calls to this method return the cached object.
+
+### UML Diagram
+
+![uml_singleton_pattern](https://refactoring.guru/images/patterns/diagrams/singleton/structure-en-2x.png)
+
+### Pros and Cons
+
+![singleton_pattern_pros_and_cons](screenshots/singletonPatternPros&Cons.jpeg)
+
+</details>
